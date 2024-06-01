@@ -1,16 +1,18 @@
 from flor1 import Margarita
+from flor2 import FlorDeCuruba
 
 class Floristeria:
     def __init__(self):
         self.flores = {
-            "margarita": Margarita
+            "margarita": Margarita,
+            "flor de curuba": FlorDeCuruba
         }
 
     def pedir_flor(self, nombre_flor):
         nombre_flor = nombre_flor.lower()  
         if nombre_flor in self.flores:
            flor_clase = self.flores[nombre_flor]
-           flor = flor_clase(6,2)
+           flor = flor_clase()  # Modificación aquí
            flor.dibujar_flor()
         else:
            print("Lo siento, no tenemos esa flor disponible.")
