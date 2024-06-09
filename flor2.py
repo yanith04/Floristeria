@@ -26,3 +26,5 @@ class FlorDeCuruba:
         plt.text(0, -4.5, "Acá está tu flor de curuba", ha='center', fontsize=12, color='green')
 
         plt.show()
+flor = FlorDeCuruba()
+flor.dibujar_flor()

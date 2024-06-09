@@ -26,3 +26,5 @@ class Margarita:
         plt.text(0, -1.2, "ACA ESTA TU MARGARITA", ha='center', fontsize=12, color='black')
 
         plt.show()
+flor = Margarita()
+flor.dibujar_flor()
