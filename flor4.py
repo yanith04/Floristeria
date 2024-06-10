@@ -33,5 +33,3 @@ class RosaConTallo:
         plt.axis('off')
         plt.show()
 
-rosa_con_tallo = RosaConTallo()
-rosa_con_tallo.dibujar_flor()

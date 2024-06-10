@@ -2,6 +2,7 @@ from flor1 import Margarita
 from flor2 import FlorDeCuruba
 from flor3 import CorazonSangrante
 from flor4 import RosaConTallo
+from flor5 import Tulipan
 
 class Floristeria:
     def __init__(self):
@@ -9,7 +10,8 @@ class Floristeria:
             "margarita": Margarita,
             "passiflora": FlorDeCuruba,
             "corazon sangrante": CorazonSangrante, 
-            "Rosa": RosaConTallo
+            "rosa": RosaConTallo,
+            "tulipan": Tulipan
         }
 
     def pedir_flor(self, nombre_flor):
@@ -35,7 +37,7 @@ class Floristeria:
             else:
                 print("Por favor, elija una flor válida de la lista.")
 
+
 floristeria = Floristeria()
-floristeria.mostrar_flores_disponibles()
-nombre_flor = input("Por favor, elija una flor de la lista anterior: ")
+nombre_flor = floristeria.elegir_flor()
 floristeria.pedir_flor(nombre_flor)
